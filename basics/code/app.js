@@ -12,7 +12,7 @@
 <div id="child2">
   <h1>Im H1 from Child2</h1>
    <h2>Im H2 from Child2</h2>
-</div>
+</div> 
 </div> */}
 
 const parent = React.createElement(
