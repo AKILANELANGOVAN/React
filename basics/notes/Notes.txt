@@ -1,0 +1,70 @@
+Day 1: React Basics & Emmet
+
+---------------------------------
+🛠 Emmet
+---------------------------------
+- Emmet: A toolkit to quickly generate code.
+- html:5 => Emmet shortcut to create the basic HTML structure.
+
+---------------------------------
+🌐 CDN & Cross-Origin
+---------------------------------
+- CDN (Content Delivery Network): Used to load external libraries like React.
+- Cross-Origin: A policy that restricts how resources are shared between different domains.
+
+---------------------------------
+📌 Key Points
+---------------------------------
+
+1. React Replaces Content Inside Root:
+   - Any content written inside <div id="root"> will be replaced by React.
+   - Example:
+     <h1>Hello above root</h1>
+     <div id="root">
+       <h1>Inside root</h1>
+     </div>
+     <h1>Hello below root</h1>
+
+     After rendering something inside 'root', only the React content remains.
+
+2. React is a Library:
+   - React is a JavaScript library, not a framework.
+   - It's used to build reusable UI components.
+
+3. React.createElement():
+   - Syntax: React.createElement(tag, attributes, content)
+   - Example:
+     React.createElement("h1", { className: "heading" }, "Hello World")
+   - It returns a JavaScript object (not HTML) called a React element.
+
+4. render():
+   - Converts React elements (objects) into real DOM elements.
+   - Typically done using ReactDOM.render() in older versions or createRoot in newer ones.
+
+5. Nested React Elements:
+   - Example:
+     const parent = React.createElement(
+       "div",
+       { id: "parent" },
+       [
+         React.createElement(
+           "div",
+           { id: "child1" },
+           [
+             React.createElement("h1", {}, "Hi from H1 child1"),
+             React.createElement("h2", {}, "Hi from H2 child1")
+           ]
+         )
+       ]
+     );
+
+---------------------------------
+✏️ Fill in the blanks:
+---------------------------------
+
+1. React.createElement() takes ___ arguments: the tag, the ___, and the ___.
+
+2. When rendering into a <div id="root">, any existing content inside that div will be __________ by React.
+
+---------------------------------
+
